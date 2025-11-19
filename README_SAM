@@ -1,0 +1,69 @@
+Step 6: Set Up Locally (After Download)
+Open terminal/command prompt in the extracted folder:
+
+# 1. Install frontend dependencies
+cd frontend
+yarn install
+
+# 2. Install backend dependencies  
+cd ../backend
+pip install -r requirements.txt
+
+# 3. Start backend (Terminal 1)
+python -m uvicorn server:app --reload --host 0.0.0.0 --port 8001
+
+# 4. Start frontend (NEW Terminal 2)
+cd ../frontend
+yarn start
+Open browser: http://localhost:3000
+
+Done! 🎉
+
+📚 What's Included in the GitHub Repo
+After you push, your repo will have:
+
+only-green-ecommerce/
+├── frontend/           (Complete React app)
+├── backend/            (Complete FastAPI)
+├── README.md           (Project overview)
+├── LOCAL_SETUP_GUIDE.md (Detailed setup)
+├── DEPLOYMENT.md       (Free deployment guide)
+└── Other docs...
+🚀 After Local Testing: Deploy FREE
+Once you've tested locally, deploy online for $0/month:
+
+1. MongoDB Atlas (Database - 2 min)
+Go to: https://www.mongodb.com/cloud/atlas/register
+Create free account → Create free cluster
+Get connection string
+2. Railway (Backend - 3 min)
+Go to: https://railway.app
+Connect the GitHub repo you just created
+Select backend folder
+Add env var: MONGO_URL=<your-atlas-string>
+Deploy!
+3. Vercel (Frontend - 2 min)
+Go to: https://vercel.com
+Import the same GitHub repo
+Root directory: frontend
+Add env var: REACT_APP_BACKEND_URL=<railway-url>
+Deploy!
+Your site will be live! 🌐
+
+❓ Don't See the GitHub Button?
+If you can't find "Save to GitHub" anywhere:
+
+Tell me: "I don't see the GitHub button"
+
+And I'll give you the quick manual copy method (8 essential files only).
+
+✅ Do You See the Button?
+Yes? → Click it and follow the steps above!
+
+No? → Tell me and I'll show you the files to copy manually.
+
+Which is it? 😊
+
+Nov 19, 12:13 PM
+
+Copy
