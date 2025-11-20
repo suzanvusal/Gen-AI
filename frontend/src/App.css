@@ -538,21 +538,56 @@ body::before {
 .skill-content {
   padding: 2rem;
   text-align: center;
+  position: relative;
 }
 
-.skill-icon-wrapper {
+.skill-logo-wrapper {
+  position: relative;
   margin-bottom: 1.5rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
 }
 
-.skill-card:hover .skill-icon-wrapper {
+.skill-card:hover .skill-logo-wrapper {
   transform: scale(1.1);
 }
 
-.skill-icon {
-  width: 48px;
-  height: 48px;
+.skill-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  transition: filter 0.3s ease;
 }
+
+.skill-card:hover .skill-logo {
+  filter: drop-shadow(0 4px 8px rgba(0, 102, 204, 0.3));
+}
+
+/* Wire Connection Points */
+.wire-point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.skill-card:hover .wire-point {
+  opacity: 1;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.wire-point-1 { top: 10px; left: 10px; }
+.wire-point-2 { top: 10px; right: 10px; animation-delay: 0.2s; }
+.wire-point-3 { bottom: 10px; left: 10px; animation-delay: 0.4s; }
+.wire-point-4 { bottom: 10px; right: 10px; animation-delay: 0.6s; }
 
 .skill-title {
   font-family: var(--font-heading);
