@@ -623,24 +623,74 @@ body::before {
 /* Wire Connection Points */
 .wire-point {
   position: absolute;
-  width: 6px;
-  height: 6px;
-  background: var(--color-primary);
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle, var(--color-primary), var(--color-accent));
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;
-  box-shadow: 0 0 10px var(--color-primary);
+  box-shadow: 
+    0 0 10px var(--color-primary),
+    0 0 20px rgba(0, 102, 204, 0.5),
+    inset 0 0 5px rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 102, 204, 0.3);
 }
 
 .skill-card:hover .wire-point {
   opacity: 1;
-  animation: pulse 1.5s ease-in-out infinite;
+  animation: dataFlow 1.5s ease-in-out infinite;
 }
 
-.wire-point-1 { top: 10px; left: 10px; }
-.wire-point-2 { top: 10px; right: 10px; animation-delay: 0.2s; }
-.wire-point-3 { bottom: 10px; left: 10px; animation-delay: 0.4s; }
-.wire-point-4 { bottom: 10px; right: 10px; animation-delay: 0.6s; }
+.wire-point-1 { top: 15px; left: 15px; }
+.wire-point-2 { top: 15px; right: 15px; animation-delay: 0.2s; }
+.wire-point-3 { bottom: 15px; left: 15px; animation-delay: 0.4s; }
+.wire-point-4 { bottom: 15px; right: 15px; animation-delay: 0.6s; }
+
+@keyframes dataFlow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 
+      0 0 10px var(--color-primary),
+      0 0 20px rgba(0, 102, 204, 0.5);
+  }
+  50% {
+    transform: scale(1.3);
+    box-shadow: 
+      0 0 20px var(--color-primary),
+      0 0 40px rgba(0, 102, 204, 0.8),
+      0 0 60px rgba(66, 165, 245, 0.6);
+  }
+}
+
+/* Binary Code Effect on Hover */
+.skill-content::before {
+  content: attr(data-binary);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-family: 'Courier New', monospace;
+  font-size: 8px;
+  color: rgba(0, 102, 204, 0.15);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  letter-spacing: 1px;
+}
+
+.skill-card:hover .skill-content::before {
+  opacity: 1;
+  animation: binaryScroll 2s linear infinite;
+  content: '01001001 01010100';
+}
+
+@keyframes binaryScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+}
 
 .skill-title {
   font-family: var(--font-heading);
