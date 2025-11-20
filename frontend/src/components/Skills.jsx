@@ -78,19 +78,33 @@ const Skills = () => {
       <div className="skills-background-elements">
         <Box className="bg-element element-1" />
         <Layers className="bg-element element-2" />
-        <Cloud className="bg-element element-3" />
-        <Container className="bg-element element-4" />
       </div>
+      
+      {/* Connection Lines Canvas */}
+      <canvas id="wire-canvas" className="wire-canvas"></canvas>
       
       <div className="section-container">
         <h2 className="section-title">Technical Skills</h2>
         
         <div className="skills-grid">
           {skills.map((skill, index) => (
-            <Card key={index} className="skill-card">
+            <Card 
+              key={index} 
+              className="skill-card" 
+              data-skill-index={index}
+            >
               <CardContent className="skill-content">
-                <div className="skill-icon-wrapper" style={{ color: skill.color }}>
-                  {skill.icon}
+                <div className="skill-logo-wrapper">
+                  <img 
+                    src={skill.logo} 
+                    alt={`${skill.title} logo`}
+                    className="skill-logo"
+                  />
+                  {/* Wire connection points */}
+                  <div className="wire-point wire-point-1"></div>
+                  <div className="wire-point wire-point-2"></div>
+                  <div className="wire-point wire-point-3"></div>
+                  <div className="wire-point wire-point-4"></div>
                 </div>
                 <h3 className="skill-title">{skill.title}</h3>
                 <p className="skill-description">{skill.description}</p>
