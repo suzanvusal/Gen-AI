@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
-import { Cloud, Server, Database, Lock, Code, GitBranch, Container, Workflow } from 'lucide-react';
+import { Cloud, Server, Database, Lock, Code, GitBranch, Container, Workflow, Box, Layers } from 'lucide-react';
 
 const Skills = () => {
   const skills = [
