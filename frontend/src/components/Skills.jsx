@@ -74,6 +74,14 @@ const Skills = () => {
 
   return (
     <section id="skills" className="section-wrapper bg-gray-50">
+      {/* DevOps Background Elements */}
+      <div className="skills-background-elements">
+        <Box className="bg-element element-1" />
+        <Layers className="bg-element element-2" />
+        <Cloud className="bg-element element-3" />
+        <Container className="bg-element element-4" />
+      </div>
+      
       <div className="section-container">
         <h2 className="section-title">Technical Skills</h2>
         
