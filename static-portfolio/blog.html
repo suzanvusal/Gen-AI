@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Sujan Bhusal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .blog-container {
+            min-height: 100vh;
+            background-color: #F8FAFB;
+            padding: 8rem 2rem 4rem;
+        }
+        
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            padding: 3rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--color-primary-dark);
+            transform: translateX(-5px);
+        }
+        
+        .back-link svg {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .blog-title {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            color: var(--color-primary-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .blog-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .blog-description {
+            font-size: 1rem;
+            color: var(--color-text-light);
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-container">
+        <div class="blog-content">
+            <a href="index.html" class="back-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Back to Portfolio
+            </a>
+            
+            <h1 class="blog-title">Blog Coming Soon</h1>
+            <p class="blog-subtitle">Stay tuned for insights on DevOps, Cloud Engineering, and Technology!</p>
+            <p class="blog-description">
+                This space will feature articles about AWS, Azure, DevOps practices, Infrastructure as Code, 
+                containerization, CI/CD pipelines, and much more. Check back soon for updates!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
