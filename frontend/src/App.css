@@ -214,6 +214,8 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -222,6 +224,8 @@ body {
   align-items: center;
   text-align: center;
   animation: fadeInUp 1s ease-out;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-greeting {
