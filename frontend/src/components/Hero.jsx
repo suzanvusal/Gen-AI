@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Cloud, Server, Database, Code, GitBranch, Container } from 'lucide-react';
 import { Button } from './ui/button';
 
 const Hero = () => {
@@ -12,6 +12,18 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
+      {/* Floating DevOps Icons */}
+      <div className="floating-icons">
+        <Cloud className="floating-icon icon-1" />
+        <Server className="floating-icon icon-2" />
+        <Database className="floating-icon icon-3" />
+        <Code className="floating-icon icon-4" />
+        <GitBranch className="floating-icon icon-5" />
+        <Container className="floating-icon icon-6" />
+        <Cloud className="floating-icon icon-7" />
+        <Server className="floating-icon icon-8" />
+      </div>
+      
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-text">
