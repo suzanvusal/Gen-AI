@@ -92,6 +92,7 @@ const Skills = () => {
       
       {/* Connection Lines Canvas */}
       <canvas id="wire-canvas" className="wire-canvas"></canvas>
+      <WireEffect />
       
       <div className="section-container">
         <h2 className="section-title">Technical Skills</h2>
