@@ -1,71 +1,71 @@
 import React from 'react';
 import { Card, CardContent } from './ui/card';
-import { Cloud, Server, Database, Lock, Code, GitBranch, Container, Workflow, Box, Layers } from 'lucide-react';
+import { Box, Layers } from 'lucide-react';
 
 const Skills = () => {
   const skills = [
     {
-      icon: <Cloud className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
       title: 'AWS',
       description: 'Expertise in EC2, S3, Lambda, RDS, and more.',
       color: '#FF9900'
     },
     {
-      icon: <Cloud className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
       title: 'Azure',
       description: 'Proficient in Azure services like Virtual Machines, App Services, and Azure DevOps.',
       color: '#0089D6'
     },
     {
-      icon: <Cloud className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg',
       title: 'Google Cloud',
       description: 'Proficient in GCP services like Compute Engine, BigQuery, and Kubernetes Engine.',
       color: '#4285F4'
     },
     {
-      icon: <Container className="skill-icon" />,
-      title: 'Docker & Kubernetes',
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      title: 'Docker',
       description: 'Skilled in containerization and orchestration with Docker and Kubernetes.',
       color: '#2496ED'
     },
     {
-      icon: <GitBranch className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       title: 'Git & CI/CD',
       description: 'Proficient in version control and continuous integration/continuous deployment pipelines.',
       color: '#F05032'
     },
     {
-      icon: <Code className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg',
       title: 'Infrastructure as Code',
       description: 'Experience with Terraform and CloudFormation for infrastructure automation.',
       color: '#623CE4'
     },
     {
-      icon: <Lock className="skill-icon" />,
+      logo: 'https://www.svgrepo.com/show/374167/terraform.svg',
       title: 'Security & Compliance',
       description: 'Proficient in AWS GuardDuty, Security Hub, and compliance frameworks like NIST, CIS, and HIPAA.',
-      color: '#DD0031'
+      color: '#0066CC'
     },
     {
-      icon: <Database className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
       title: 'Databases',
       description: 'Experience with Amazon RDS, MySQL, Postgres, DynamoDB, and MongoDB.',
       color: '#336791'
     },
     {
-      icon: <Workflow className="skill-icon" />,
+      logo: 'https://www.svgrepo.com/show/354202/postman-icon.svg',
       title: 'DevSecOps',
       description: 'Skilled in SonarQube, OWASP, and integrating security into CI/CD pipelines.',
       color: '#00ADD8'
     },
     {
-      icon: <Server className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       title: 'JavaScript',
       description: 'Experienced in front-end development and building interactive web applications.',
       color: '#F7DF1E'
     },
     {
-      icon: <Code className="skill-icon" />,
+      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
       title: 'Python',
       description: 'Skilled in data analysis, machine learning, and backend development with Python.',
       color: '#3776AB'
