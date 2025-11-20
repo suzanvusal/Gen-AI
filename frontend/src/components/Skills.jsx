@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Box, Layers } from 'lucide-react';
+import WireEffect from './WireEffect';
 
 const Skills = () => {
+  useEffect(() => {
+    // Initialize wire effect after component mounts
+    const timer = setTimeout(() => {
+      const event = new Event('skillsLoaded');
+      window.dispatchEvent(event);
+    }, 100);
+    
+    return () => clearTimeout(timer);
+  }, []);
   const skills = [
     {
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
