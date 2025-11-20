@@ -457,6 +457,17 @@ body::before {
   z-index: 0;
 }
 
+/* Wire Canvas */
+.wire-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
 .bg-element {
   position: absolute;
   color: rgba(0, 102, 204, 0.04);
